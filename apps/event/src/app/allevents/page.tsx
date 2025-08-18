@@ -8,8 +8,18 @@ interface EventForm {
 }
 
 const AllEvents = () => {
+
+
   const [allEvents, setAllEvents] = useState<EventForm[]>([]);
   const [filteredEvents, setFilteredEvents] = useState<EventForm[]>([]);
+
+
+  const handleDelete = (index: number) => {
+    const updatedEvents = [...allEvents];
+    updatedEvents.splice(index, 1);
+    setAllEvents(updatedEvents);
+    localStorage.setItem('events', JSON.stringify(updatedEvents));
+  };
 
   useEffect(() => {
     const storedEvents = localStorage.getItem("events");
@@ -47,29 +57,38 @@ const AllEvents = () => {
         <ul className="space-y-3">
           {filteredEvents.length > 0
             ? filteredEvents.map((event, index) => (
-                <li
-                  key={index}
-                  className="flex justify-between items-center p-4 
+              <li
+                key={index}
+                className="flex justify-between items-center p-4 
                              bg-gray-100 rounded-lg shadow-sm hover:bg-gray-200 transition"
-                >
-                  <span className="font-medium text-gray-700">
-                    {event.name}
-                  </span>
-                  <span className="text-sm text-gray-500">{event.date}</span>
-                </li>
-              ))
+              >
+                <span className="font-medium text-gray-700">
+                  {event.name}
+                </span>
+                <span className="text-sm text-gray-500">{event.date}</span>
+              </li>
+            ))
             : allEvents.map((event, index) => (
-                <li
-                  key={index}
-                  className="flex justify-between items-center p-4 
+              <li
+                key={index}
+                className="flex justify-between items-center p-4 
                              bg-gray-100 rounded-lg shadow-sm hover:bg-gray-200 transition"
+              >
+                <span className="font-medium text-gray-700">
+                  {event.name}
+                </span>
+                <span className="text-sm text-gray-500">{event.date}</span>
+                <button
+                  onClick={() => handleDelete(index)}
+                  className="text-red-500 hover:text-red-700 p-2 rounded-full hover:bg-red-50 transition-colors"
+                  aria-label="Delete event"
                 >
-                  <span className="font-medium text-gray-700">
-                    {event.name}
-                  </span>
-                  <span className="text-sm text-gray-500">{event.date}</span>
-                </li>
-              ))}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </li>
+            ))}
         </ul>
       </div>
     </div>
