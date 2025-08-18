@@ -2,6 +2,29 @@
 
 A simple Event Manager app built with **Next.js**, styled with **Tailwind CSS**, and managed inside a **Turborepo** setup.
 
+---
+# Working Images Of Project
+
+### Home Page
+<img width="1905" height="918" alt="Screenshot 2025-08-18 172920" src="https://github.com/user-attachments/assets/d3a1f5eb-d246-4543-82d8-7030ff5de25b" />
+
+---
+
+### Create Events & List Of Upcoming Events
+<img width="1902" height="918" alt="Screenshot 2025-08-18 173146" src="https://github.com/user-attachments/assets/430c1086-b5da-4d5e-bb12-18d9e698c3d6" />
+
+---
+
+### All Events 
+<img width="1907" height="914" alt="Screenshot 2025-08-18 173201" src="https://github.com/user-attachments/assets/f44231ea-9909-459a-8183-c3848361374b" />
+
+---
+
+### Fetching Events From localStorage
+<img width="1912" height="920" alt="image" src="https://github.com/user-attachments/assets/69bf2246-e4ef-4f55-b163-a2c64bd4100e" />
+
+---
+
 ## Getting Started
 
 Follow the steps below to run the project locally:
@@ -18,7 +41,7 @@ pnpm install
 
 ### 3. Navigate to the Events app
 ```bash
-cd apps/events
+cd apps/event
 ```
 
 ### 4. Install app-specific dependencies
