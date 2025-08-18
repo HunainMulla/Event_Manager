@@ -3,6 +3,10 @@
 A simple Event Manager app built with **Next.js**, styled with **Tailwind CSS**, and managed inside a **Turborepo** setup.
 
 ---
+
+# Live Link
+### Link : https://event-manager-live.vercel.app/ 
+---
 # Working Images Of Project
 
 ### Home Page
