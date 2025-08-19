@@ -53,15 +53,21 @@ cd apps/event
 npm install
 ```
 
-### 5. Run the development server
+### 5. Navigate Back To Root Directory
 ```bash
-npm run dev
+cd ..
+cd ..
 ```
 
-### 6. Open in browser
-Go to [http://localhost:3000](http://localhost:3000)  
+### 6. Run The Server
+```bash
+pnpm dev
+```
 
----
+### 7.Open this url in browser
+  ```bash
+http://localhost:4000
+```
 
 ## Features
 - Add new events  
