@@ -5,7 +5,9 @@ A simple Event Manager app built with **Next.js**, styled with **Tailwind CSS**,
 ---
 
 # Live Link
-### Link : https://event-manager-live.vercel.app/ 
+
+Link : https://event-manager-live.vercel.app/
+
 ---
 # Working Images Of Project
 
@@ -14,12 +16,12 @@ A simple Event Manager app built with **Next.js**, styled with **Tailwind CSS**,
 
 ---
 
-### Create Events & List Of Upcoming Events
+### Create Events & List Of Upcoming Events - /events
 <img width="1902" height="918" alt="Screenshot 2025-08-18 173146" src="https://github.com/user-attachments/assets/430c1086-b5da-4d5e-bb12-18d9e698c3d6" />
 
 ---
 
-### All Events 
+### All Events - /allevents
 <img width="1907" height="914" alt="Screenshot 2025-08-18 173201" src="https://github.com/user-attachments/assets/f44231ea-9909-459a-8183-c3848361374b" />
 
 ---
